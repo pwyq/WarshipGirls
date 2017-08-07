@@ -4,3 +4,14 @@
 这是一个咸鱼废提的小笔记本，欢迎虫群来纠错和实验。
 
 * [阵容记录本](https://github.com/pwyq/WarshipGirlsR/blob/master/Notes/WGR_Line_up_%E9%98%B5%E5%AE%B9.md)
+
+<br><br>
+
+### 常用资料站
+* [舰船出货查询](http://www.jianrmod.cn/index.html)
+* [战舰少女-母港](https://hp.twintails.xyz/)
+* [战舰少女资料库](http://js.ntwikis.com/)
+* [战舰少女百科](https://www.zjsnrwiki.com/wiki/%E9%A6%96%E9%A1%B5)
+* [舰R萌娘百科](https://zh.moegirl.org/%E6%88%98%E8%88%B0%E5%B0%91%E5%A5%B3)
+* [NGA舰R版](http://bbs.ngacn.cc/thread.php?fid=-149110)
+* [S1舰R专楼](http://bbs.saraba1st.com/2b/thread-1065797-1-1.html)
