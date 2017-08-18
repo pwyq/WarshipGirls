@@ -1,20 +1,20 @@
 ## 蓝星海狼大队
 
 This list was designed at WGR version `3.1.0`, and can be used until new `SS` is released or existed `SS`/`SC` is modified.
-`SS` and `SC` require very little resources and have relatively shorter repairing time in WGR; therefore, this list is created to maximize the potential of SS/SC fleet.
+`SS` and `SC` require very little resources and need relatively shorter repairing time in WGR; therefore, this list is created to maximize the potential of SS/SC fleet.
 
 | Navy | Class | Name | Unmod | Mod-NS | Mod-S1 | Mod-S2 | Total |
-| ---- | ----- | ---- | ---------- | ----------- | ----------- | ----------- | ----- |
+| ---- | ----- | ---- | ----- |------- | ------ | ------ | ----- |
 | Kriegsmarine | U-boat | U47  |   |   | 1 | 11 | 12 |
 |              |        | U81  | 3 |   |   |    |  3 |
 |              |        | U96  | 3 |   |   |    |  3 |
 |              |        | U156 | 6 |   |   |    |  6 |
 |              |        | U505 | 6 |   |   |    |  6 |
-| USN | Balao-class | Archerfish | 3 | 3 | 6 |   |  12 |
-|     |             | Tang       | 6 |   |   |   |   6 |
-|     | Gato-class  | Albacore   | 3 |   | 9 |   |  12 |
+| USN | Balao-class | Archerfish | 3 | 3 | 6 |   | 12 |
+|     |             | Tang       | 6 |   |   |   |  6 |
+|     | Gato-class  | Albacore   | 3 |   | 9 |   | 12 |
 | RN | M-class | M1 | 2 |   |   |   | 2 |
-| Marine national francaise | Fayette-class | 1 |   |   |   | 1 |
+| MNF | Fayette-class | 1 |   |   |   | 1 |
 
 `Unmod`: Unmodified
 
@@ -36,15 +36,15 @@ This list was designed at WGR version `3.1.0`, and can be used until new `SS` is
 
 > Maximum Amount of Torpedoes Desired
 
-    The number of modified `SS` x 3 + The number of unmodified `SS` x 2 + The number of unmodified `SC` x 3
+    The number of modified `SS`x3 + The number of unmodified `SS`x2 + The number of unmodified `SC`x3
 (12+9+9)x3 + (3+3+6+6+3+6+3+2+1)x2 = **156**
 
 > The Amount of Torpedoes Needed for Basic SS/SC Suit
 
-    The number of modified `SS` X 2 + The number of unmodified `SS` x 1 + The number of unmodified `SC` x 2
+    The number of modified `SS`X2 + The number of unmodified `SS`x1 + The number of unmodified `SC`x2
 (12+9+9)x3 + (3+3+6+6+3+6+3+2+1)x2 = **93**
 
 > Available Amount of Torpedoes
 
-    The number of all `SS` x 1 + The number of all modified `SS` x 1
+    The number of all `SS`x1 + The number of all modified `SS`x1
 (12+3+3+6+6+12+6+12)x1 + (12+9+9)x1 = **90**
