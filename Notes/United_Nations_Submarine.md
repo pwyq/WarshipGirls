@@ -14,7 +14,7 @@ This list was designed at WGR version `3.1.0`, and can be used until new `SS` is
 |     |             | Tang       | 6 |   |   |   |  6 |
 |     | Gato-class  | Albacore   | 3 |   | 9 |   | 12 |
 | RN | M-class | M1 | 2 |   |   |   | 2 |
-| MNF | Fayette-class | 1 |   |   |   | 1 |
+| MNF | Fayette-class | Surcouf | 1 |   |   |   | 1 |
 
 `Unmod`: Unmodified
 
