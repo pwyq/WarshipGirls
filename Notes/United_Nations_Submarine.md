@@ -34,15 +34,15 @@ This list was designed at WGR version `3.1.0`, and can be used until new `SS` is
 
 <br>
 
-Available torpedoes based on plan
+##### Available Torpedoes Based On Plan
 
-| Name | Torpedo | Accuracy | Evasion | Total Amount |
-| ---- | ------- | -------- | ------- | ------------ |
-| 53cm Oxygen Torpedo | 15 | 2 |  | N/A |
-| 533mm Magnetic Torpedo | 12 | 4 |  | 30 |
-| 21in Torpedo | 12 | 1 |  | 30 |
-| Mk.16 Torpedo | 15 | 3 |  | 18 |
-| G7eT10 Wire Guided Torpedo | 12 | 6 | 3 | 12 |	
+| Torpedo Name | Torpedo | Accuracy | Evasion | Total Amount |
+| ------------ | ------- | -------- | ------- | ------------ |
+| 53cm Oxygen Torpedo | +15 | +2 |  | N/A |
+| 533mm Magnetic Torpedo | +12 | +4 |  | 30 |
+| 21in Torpedo | +12 | +1 |  | 30 |
+| Mk.16 Torpedo | +15 | +3 |  | 18 |
+| G7eT10 Wire Guided Torpedo | +12 | +6 | +3 | 12 |	
 
 
 > Maximum Amount of Torpedoes Desired
