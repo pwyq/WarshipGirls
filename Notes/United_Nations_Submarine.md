@@ -1,7 +1,7 @@
 ## 蓝星海狼大队
 
 This list was designed at WGR version `3.1.0`, and can be used until new `SS` is released or existed `SS`/`SC` is modified.
-`SS` and `SC` require very little resources and need relatively shorter repairing time in WGR; therefore, this list is created to maximize the potential of SS/SC fleet.
+`SS` and `SC` require very little resources and need relatively shorter repairing time in WGR; therefore, this list was created to maximize the potential of SS/SC fleet.
 
 | Navy | Class | Name | Unmod | Mod-NS | Mod-S1 | Mod-S2 | Total |
 | ---- | ----- | ---- | ----- |------- | ------ | ------ | ----- |
@@ -14,7 +14,7 @@ This list was designed at WGR version `3.1.0`, and can be used until new `SS` is
 |     |             | Tang       | 6 |   |   |   |  6 |
 |     | Gato-class  | Albacore   | 3 |   | 9 |   | 12 |
 | RN | M-class | M1 | 2 |   |   |   | 2 |
-| MNF | Fayette-class | 1 |   |   |   | 1 |
+| MNF | Fayette-class | Surcouf | 1 |   |   |   | 1 |
 
 `Unmod`: Unmodified
 
