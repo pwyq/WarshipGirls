@@ -27,5 +27,5 @@
 [5]: https://zh.moegirl.org/%E6%88%98%E8%88%B0%E5%B0%91%E5%A5%B3
 [6]: http://bbs.ngacn.cc/thread.php?fid=-149110
 [7]: http://bbs.saraba1st.com/2b/thread-1065797-1-1.html
-[8]: https://github.com/pwyq/WarshipGirlsR/blob/master/Notes/WGR_Line_up_%E9%98%B5%E5%AE%B9.md
-[9]: https://github.com/pwyq/WarshipGirlsR/blob/master/Notes/United_Nations_Submarine.md
+[8]: https://git.io/v5Jo9
+[9]: https://git.io/vNEii
