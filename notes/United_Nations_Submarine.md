@@ -1,4 +1,4 @@
-## 蓝星海狼大队
+# 蓝星海狼大队
 
 (待更新)
 
@@ -36,7 +36,7 @@ This list was designed at WGR version `3.1.0`, and can be used until new `SS` is
 
 <br>
 
-##### Available Torpedoes Based On Plan
+## Available Torpedoes Based On Plan
 
 | Torpedo Name | Torpedo | Accuracy | Evasion | Total Amount |
 | ------------ | ------- | -------- | ------- | ------------ |

@@ -12,6 +12,8 @@
 * [S1舰R专楼][7]
 * [战舰少女台服贴吧][8]
 
+---
+
 ### 舰游历程
 
 ```
@@ -29,7 +31,7 @@
 7102.06 - 9102.11 
         R持续性弃坑
 9102.11 回坑R，做了这个小站
-        舰娘大电影 Midway/决战中途岛 超好看，回坑因素之一
+        "舰娘大电影" Midway/决战中途岛 超好看，回坑因素之一
 ```
 
 ### 贩卖军火
@@ -46,8 +48,6 @@
 - USN: Tang 6/6; Archerfish 7/12; Albacore 13/12
 - RN: M1 2/4
 - Marine national francaise: Surcouf 1/2
--  333/370
-
 
 
 [1]: http://www.jianrmod.cn/index.html
