@@ -1,6 +1,35 @@
 # 蓝星海狼大队
 
-(待更新)
+## New version
+
+现有
+
+| 名 | 总数 | 改造 | 未改 |
+|:---:|:---:|:---:|:---:|
+| 大青花鱼 | 14 | 6 | 8 |
+| 射水鱼 | 7 | 5 | 2 |
+| 刺尾鱼 | 9 | 0 | 9 |
+| U47 | 5 | 5 | 0 |
+| U81 | 1 | 1 | 0 |
+| U505 | 5 | 0 | 5 |
+| U96 | 1 | 0 | 1 |
+| U1206 | 1 | 0 | 1 |
+| 絮库夫 | 1 | 0 | 1 |
+| M1 | 2 | 0 | 2 |
+
+
+M2
+, U156
+, U1405
+, U35
+, 吕-34
+, K1
+, 鹦鹉螺
+, 达芬奇
+, 莉安夕
+, 鲅鱼
+
+## Old version
 
 This list was designed at WGR version `3.1.0`, and can be used until new `SS` is released or existed `SS`/`SC` is modified.
 `SS` and `SC` require very little resources and need relatively shorter repairing time in WGR; therefore, this list was created to maximize the potential of SS/SC fleet.
