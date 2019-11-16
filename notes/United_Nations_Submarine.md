@@ -1,5 +1,7 @@
 ## 蓝星海狼大队
 
+(待更新)
+
 This list was designed at WGR version `3.1.0`, and can be used until new `SS` is released or existed `SS`/`SC` is modified.
 `SS` and `SC` require very little resources and need relatively shorter repairing time in WGR; therefore, this list was created to maximize the potential of SS/SC fleet.
 
