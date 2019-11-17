@@ -4,6 +4,7 @@
 * [战舰少女-母港][2]
 * [战舰少女资料库][3]
 * [战舰少女百科][4]
+* [舰R魔盒-出货统计][9]
 * [舰R萌娘百科][5] (已停更)
 
 ### 游戏社区
@@ -58,3 +59,4 @@
 [6]: http://bbs.ngacn.cc/thread.php?fid=-149110
 [7]: http://bbs.saraba1st.com/2b/thread-1065797-1-1.html
 [8]: https://wapp.baidu.com/mo/q/f?kw=%E6%88%98%E8%88%B0%E5%B0%91%E5%A5%B3%E5%8F%B0%E6%9C%8D&ie=utf-8
+[9]: http://www.jianrmod.cn
