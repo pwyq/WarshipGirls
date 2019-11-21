@@ -240,6 +240,8 @@ class GameLogin:
         url_end = url_end.format(**url_end_dict)
         return url_end
 
+
+
     def encryption(self, url, method):
         times = datetime.datetime.utcnow().strftime('%a, %d %b %Y %H:%M:%S GMT')
 
@@ -261,37 +263,28 @@ class GameLogin:
     # ============ xie de shi shen me gou shi???
 
     def get_login_reward(self):
-        url = self.server_list[0]["host"] + 'active/getLoginAward/c3ecc6250c89e88d83832e3395efb973/' + self.fffffffffff_get_url_end()
+        url = self.server_list[0]["host"] + 'active/getLoginAward/c3ecc6250c89e88d83832e3395efb973/' + self.get_url_end()
         data=self.Mdecompress(url)
         data = json.loads(data)
         return data
 
     def get_friend_list(self):
-        url = self.server_list[0]["host"] + 'friend/getlist' + self.fffffffffff_get_url_end()
+        url = self.server_list[0]["host"] + 'friend/getlist' + self.get_url_end()
         raw_data = self.Mdecompress(url)
         data = json.loads(raw_data)
         return data["list"]
     
     def friend_feat(self, uid, cook_item):
-        url = self.server_list[0]["host"] + 'live/feat/' + uid + '/' + cook_item + self.fffffffffff_get_url_end()
+        url = self.server_list[0]["host"] + 'live/feat/' + uid + '/' + cook_item + self.get_url_end()
         raw_data = self.Mdecompress(url)
         data = json.loads(raw_data)
         return data
 
     def visit_friend_kitchen(self, uid):
-        url = self.server_list[0]["host"] + 'live/friendKitchen/' + uid + self.fffffffffff_get_url_end()
+        url = self.server_list[0]["host"] + 'live/friendKitchen/' + uid + self.get_url_end()
         raw_data = self.Mdecompress(url)
         data = json.loads(raw_data)
         return data
-
-    def fffffffffff_get_url_end(self):
-        url_time = str(int(round(time.time() * 1000)))
-        md5_raw = url_time + 'ade2688f1904e9fb8d2efdb61b5e398a'
-        md5 = hashlib.md5(md5_raw.encode('utf-8')).hexdigest()
-        url_end = '&t={time}&e={key}&gz=1&market=2&channel={channel}&version={version}'
-        url_end_dict = {'time': url_time, 'key': md5, 'channel': self.channel, 'version': self.version}
-        url_end = url_end.format(**url_end_dict)
-        return url_end
 
     def Mdecompress(self,url,*vdata):
         if  len(vdata)==0:
