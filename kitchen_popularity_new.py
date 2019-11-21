@@ -1,13 +1,9 @@
 # -*- coding: utf-8 -*-
-import sys
-import re
 import datetime
 import time
 import json
 import os
 import random
-import logging
-import shutil
 import base64
 import hashlib
 import hmac
@@ -15,16 +11,13 @@ import urllib
 import urllib3
 import zlib
 
-
 import requests
 import requests.exceptions
-
 
 #=====================================================================================
 HEADER = {'Accept-Encoding': 'identity',
           'Connection': 'Keep-Alive',
           'User-Agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; mi max Build/LMY48Z)'}
-
 
 class Session:
     def __init__(self):
@@ -58,74 +51,57 @@ session = Session()
 
 #=================================================================================
 
-VERSION = "1.7.1.0"
-BUILD_VERSION = 3
-
 RES = {2: '油', 3: '弹', 4: '钢', 9: '铝', 10141: "航母核心", 10241: '战列核心', 10341: '巡洋核心', 10441: '驱逐核心',
        10541: '潜艇核心', 141: '快速建造', 241: '建造蓝图', 541: '快速修理', 741: '装备蓝图', 66641: '损管'}
 
-HEADER = {'Accept-Encoding': 'identity',
-          'Connection': 'Keep-Alive',
-          'User-Agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; mi max Build/LMY48Z)'}
 
-UPDATE_URL = "http://update.protector.moe/pc/version.json"
-DOWNLOAD_URL = "https://github.com/ProtectorMoe/pc-protector-moe/releases/latest"
+# class InitData:
+#     def __init__(self):
+#         self.init_out_data = False
+#         self.init_version = None
+#         self.init_data = dict()
+#         self.ship_cid = dict()
+#         self.ship_cid_wu = dict()
+#         self.error_code = dict()
+#         self.error_code_1 = dict()
+#         self.handbook_id = dict()
+#         self.new_init_version = None
+#         self.ship_equipmnt = {}
+#         self.res_url = ""
 
-class G:
-    def __init__(self):
-        self.repair_time_limit = 0
-        self.all_log = 0
-
-g = G()
-
-
-class InitData:
-    def __init__(self):
-        self.init_out_data = False
-        self.init_version = None
-        self.init_data = dict()
-        self.ship_cid = dict()
-        self.ship_cid_wu = dict()
-        self.error_code = dict()
-        self.error_code_1 = dict()
-        self.handbook_id = dict()
-        self.new_init_version = None
-        self.ship_equipmnt = {}
-        self.res_url = ""
-
-    def read_init(self):
-        if not os.path.exists('data'):
-            os.mkdir('data')
-        if os.path.exists('data/init.json'):
-            with open('data/init.json', 'r') as f:
-                data = f.read()
-            self.init_data = json.loads(data)
-            #对比数据版本默认设置低版本
-            self.init_version = '20180927142352'
-            if "DataVersion" in self.init_data:
-                self.init_version = self.init_data["DataVersion"]
-            if "res_url" in self.init_data:
-                self.res_url = self.init_data["res_url"]
-            # 领导船只cid数据
-            for each_ship in self.init_data['shipCard']:
-                self.ship_cid[each_ship['cid']] = each_ship
-            # 普通船只cid数据
-            for each_ship in self.init_data['shipCardWu']:
-                self.ship_cid_wu[each_ship['cid']] = each_ship
-            # 错误代码
-            self.error_code_1 = self.init_data['errorCode']
-            for code, message in self.error_code_1.items():
-                self.error_code[int(code)] = message
-            # 图鉴代号
-            for each_ship in self.init_data['shipCard']:
-                if 'shipIndex' in each_ship:
-                    self.handbook_id[each_ship['cid']] = each_ship['shipIndex']
-            # 装备属性
-            for equipment in self.init_data['shipEquipmnt']:
-                self.ship_equipmnt[equipment["cid"]] = equipment
+#     def read_init(self):
+#         if not os.path.exists('data'):
+#             os.mkdir('data')
+#         if os.path.exists('data/init.json'):
+#             with open('data/init.json', 'r') as f:
+#                 data = f.read()
+#             self.init_data = json.loads(data)
+#             #对比数据版本默认设置低版本
+#             self.init_version = '20180927142352'
+#             if "DataVersion" in self.init_data:
+#                 self.init_version = self.init_data["DataVersion"]
+#             if "res_url" in self.init_data:
+#                 self.res_url = self.init_data["res_url"]
+#             # 领导船只cid数据
+#             for each_ship in self.init_data['shipCard']:
+#                 self.ship_cid[each_ship['cid']] = each_ship
+#             # 普通船只cid数据
+#             for each_ship in self.init_data['shipCardWu']:
+#                 self.ship_cid_wu[each_ship['cid']] = each_ship
+#             # 错误代码
+#             self.error_code_1 = self.init_data['errorCode']
+#             for code, message in self.error_code_1.items():
+#                 self.error_code[int(code)] = message
+#             # 图鉴代号
+#             for each_ship in self.init_data['shipCard']:
+#                 if 'shipIndex' in each_ship:
+#                     self.handbook_id[each_ship['cid']] = each_ship['shipIndex']
+#             # 装备属性
+#             for equipment in self.init_data['shipEquipmnt']:
+#                 self.ship_equipmnt[equipment["cid"]] = equipment
 
 
-init_data = InitData()
+# init_data = InitData()
 
 
 
@@ -173,7 +149,7 @@ class GameLogin:
         response_version = session.get(url=url_version, headers=HEADER, timeout=10)
         response_version = response_version.text
         response_version = json.loads(response_version)
-        init_data.new_init_version = response_version['DataVersion']
+        # init_data.new_init_version = response_version['DataVersion']
 
         # 获取版本号, 登录地址
         self.version = response_version["version"]["newVersionId"]
@@ -251,7 +227,7 @@ class GameLogin:
         pve_getUserData = json.loads(
             zlib.decompress(session.get(url=url_cheat, headers=HEADER, cookies=self.cookies, timeout=10).content))
 
-        self.get_init_data()
+        # self.get_init_data()
         return True
 
     # 普通登录实现方法
@@ -309,9 +285,6 @@ class GameLogin:
         login_response = session.get(url=login_url, headers=HEADER, timeout=10)
         login_text = json.loads(zlib.decompress(login_response.content))
 
-        if is_write and os.path.exists('requestsData'):
-            with open("requestsData/login.json", 'w') as f:
-                f.write(json.dumps(login_text))
         self.cookies = login_response.cookies.get_dict()
         self.uid = str(login_text['userId'])
         return login_text
@@ -351,36 +324,12 @@ class GameLogin:
         user_data = json.dumps(user_data)
         return user_data
 
-    def get_init_data(self):
-        print('Getting init data...')
-        if not os.path.exists('data'):
-            os.mkdir('data')
-
-        need_upgrade = True
-        if os.path.exists('data/init.json'):
-            init_data.read_init()
-            if int(init_data.new_init_version) <= int(init_data.init_version):
-                need_upgrade = False
-        if init_data.res_url != self.res:
-            need_upgrade = True
-        if need_upgrade:
-            user_data = gfffff_get_init_data(self.res, self.get_url_end())
-            if not os.path.exists('data'):
-                os.mkdir('data')
-            with open('data/init.json', 'w') as f:
-                f.write(user_data)
-            init_data.read_init()
-        return True
-
     # ============ xie de shi shen me gou shi???
 
     def get_login_reward(self):
         url = self.server_list[0]["host"] + 'active/getLoginAward/c3ecc6250c89e88d83832e3395efb973/' + self.fffffffffff_get_url_end()
         data=self.Mdecompress(url)
         data = json.loads(data)
-        if is_write and os.path.exists('requestsData'):
-            with open('requestsData/login_award.json', 'w') as f:
-                f.write(json.dumps(data))
         return data
 
     def get_friend_list(self):
