@@ -20,8 +20,6 @@ import requests
 import requests.exceptions
 
 
-is_write = False
-
 #=====================================================================================
 HEADER = {'Accept-Encoding': 'identity',
           'Connection': 'Keep-Alive',
@@ -161,37 +159,21 @@ class GameLogin:
 
         # 状态寄存器
 
-    # 第一次登录,获取cookies和服务器列表
+    # First login to retrieve cookies and server list
     def first_login_usual(self, server, username, pwd):
-        """
-        第一次登录,获取cookies和服务器列表
-        :return:
-    """
-        url_version = ""
-        if server == 0:  # 安卓服
-            url_version = 'http://version.jr.moefantasy.com/' \
-                          'index/checkVer/4.5.0/100016/2&version=4.5.0&channel=100016&market=2'
-            self.res = 'http://login.jr.moefantasy.com/index/getInitConfigs/'
-            self.channel = "100016"
-            self.portHead = "881d3SlFucX5R5hE"
-            self.key = "kHPmWZ4zQBYP24ubmJ5wA4oz0d8EgIFe"
-        elif server == 1:  # ios服
-            url_version = 'http://version.jr.moefantasy.com/' \
-                          'index/checkVer/4.7.0/100015/2&version=4.7.0&channel=100015&market=2'
-            self.res = 'http://loginios.jr.moefantasy.com/index/getInitConfigs/'
-            self.channel = "100015"
-            self.portHead = "881d3SlFucX5R5hE"
-            self.key = "kHPmWZ4zQBYP24ubmJ5wA4oz0d8EgIFe"
-        # 请求version
+        # iOS
+        url_version = 'http://version.jr.moefantasy.com/' \
+                      'index/checkVer/4.7.0/100015/2&version=4.7.0&channel=100015&market=2'
+        self.res = 'http://loginios.jr.moefantasy.com/index/getInitConfigs/'
+        self.channel = "100015"
+        self.portHead = "881d3SlFucX5R5hE"
+        self.key = "kHPmWZ4zQBYP24ubmJ5wA4oz0d8EgIFe"
         # -------------------------------------------------------------------------------------------
         # 拉取版本信息
         response_version = session.get(url=url_version, headers=HEADER, timeout=10)
         response_version = response_version.text
         response_version = json.loads(response_version)
         init_data.new_init_version = response_version['DataVersion']
-        if is_write and os.path.exists('requestsData'):
-            with open('requestsData/version.json', 'w') as f:
-                f.write(json.dumps(response_version))
 
         # 获取版本号, 登录地址
         self.version = response_version["version"]["newVersionId"]
@@ -244,51 +226,30 @@ class GameLogin:
         url_cheat = host + 'pevent/getPveData/' + self.get_url_end()
         pevent_getPveData = json.loads(
             zlib.decompress(session.get(url=url_cheat, headers=HEADER, cookies=self.cookies, timeout=10).content))
-        if is_write and os.path.exists('requestsData'):
-            with open("requestsData/pevent_getPveData.json", 'w') as f:
-                f.write(json.dumps(pevent_getPveData))
 
         url_cheat = host + 'shop/canBuy/1/' + self.get_url_end()
         shop_canbuy = json.loads(
             zlib.decompress(session.get(url=url_cheat, headers=HEADER, cookies=self.cookies, timeout=10).content))
-        if is_write and os.path.exists('requestsData'):
-            with open("requestsData/shop_canbuy.json", 'w') as f:
-                f.write(json.dumps(shop_canbuy))
 
         url_cheat = host + 'live/getUserInfo' + self.get_url_end()
         shop_canbuy = json.loads(zlib.decompress(
             session.get(url=url_cheat, headers=HEADER, cookies=self.cookies, timeout=10).content))
-        if is_write and os.path.exists('requestsData'):
-            with open("requestsData/live_getUserInfo.json", 'w') as f:
-                f.write(json.dumps(shop_canbuy))
 
         url_cheat = host + 'live/getMusicList/' + self.get_url_end()
         shop_canbuy = json.loads(zlib.decompress(
             session.get(url=url_cheat, headers=HEADER, cookies=self.cookies, timeout=10).content))
-        if is_write and os.path.exists('requestsData'):
-            with open("requestsData/live_getMusicList.json", 'w') as f:
-                f.write(json.dumps(shop_canbuy))
 
         url_cheat = host + 'bsea/getData/' + self.get_url_end()
         bsea_getData = json.loads(
             zlib.decompress(session.get(url=url_cheat, headers=HEADER, cookies=self.cookies, timeout=10).content))
-        if is_write and os.path.exists('requestsData'):
-            with open("requestsData/bsea_getData.json", 'w') as f:
-                f.write(json.dumps(bsea_getData))
 
         url_cheat = host + 'active/getUserData' + self.get_url_end()
         active_getUserData = json.loads(
             zlib.decompress(session.get(url=url_cheat, headers=HEADER, cookies=self.cookies, timeout=10).content))
-        if is_write and os.path.exists('requestsData'):
-            with open("requestsData/active_getUserData.json", 'w') as f:
-                f.write(json.dumps(active_getUserData))
 
         url_cheat = host + 'pve/getUserData/' + self.get_url_end()
         pve_getUserData = json.loads(
             zlib.decompress(session.get(url=url_cheat, headers=HEADER, cookies=self.cookies, timeout=10).content))
-        if is_write and os.path.exists('requestsData'):
-            with open("requestsData/pve_getUserData.json", 'w') as f:
-                f.write(json.dumps(pve_getUserData))
 
         self.get_init_data()
         return True
@@ -309,15 +270,12 @@ class GameLogin:
 
         login_response = session.post(url=url_login, data=json.dumps(data).replace(" ", ""),
                                       headers=self.pastport_headers, timeout=10).text
-
         login_response = json.loads(login_response)
 
-        # print("LOGIN RESPONSE: {}".format(login_response))
 
         if "error" in login_response and int(login_response["error"]) != 0:
             return False
 
-        # 字段里是否存在存在token
         tokens = ""
         if "access_token" in login_response:
             tokens = login_response["access_token"]
@@ -386,18 +344,12 @@ class GameLogin:
         self.pastport_headers["Date"] = times
 
     def gfffff_get_init_data(self, res_url, end):
-        """
-        获取init数据
-        :return:
-        """
         print("[INFO] Getting init data...")
         user_data = zlib.decompress(session.get(url=res_url + end, headers=HEADER, timeout=30).content)
         user_data = json.loads(user_data)
         user_data["res_url"] = res_url
         user_data = json.dumps(user_data)
         return user_data
-
-
 
     def get_init_data(self):
         print('Getting init data...')
