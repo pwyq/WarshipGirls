@@ -51,62 +51,6 @@ session = Session()
 
 #=================================================================================
 
-RES = {2: '油', 3: '弹', 4: '钢', 9: '铝', 10141: "航母核心", 10241: '战列核心', 10341: '巡洋核心', 10441: '驱逐核心',
-       10541: '潜艇核心', 141: '快速建造', 241: '建造蓝图', 541: '快速修理', 741: '装备蓝图', 66641: '损管'}
-
-
-# class InitData:
-#     def __init__(self):
-#         self.init_out_data = False
-#         self.init_version = None
-#         self.init_data = dict()
-#         self.ship_cid = dict()
-#         self.ship_cid_wu = dict()
-#         self.error_code = dict()
-#         self.error_code_1 = dict()
-#         self.handbook_id = dict()
-#         self.new_init_version = None
-#         self.ship_equipmnt = {}
-#         self.res_url = ""
-
-#     def read_init(self):
-#         if not os.path.exists('data'):
-#             os.mkdir('data')
-#         if os.path.exists('data/init.json'):
-#             with open('data/init.json', 'r') as f:
-#                 data = f.read()
-#             self.init_data = json.loads(data)
-#             #对比数据版本默认设置低版本
-#             self.init_version = '20180927142352'
-#             if "DataVersion" in self.init_data:
-#                 self.init_version = self.init_data["DataVersion"]
-#             if "res_url" in self.init_data:
-#                 self.res_url = self.init_data["res_url"]
-#             # 领导船只cid数据
-#             for each_ship in self.init_data['shipCard']:
-#                 self.ship_cid[each_ship['cid']] = each_ship
-#             # 普通船只cid数据
-#             for each_ship in self.init_data['shipCardWu']:
-#                 self.ship_cid_wu[each_ship['cid']] = each_ship
-#             # 错误代码
-#             self.error_code_1 = self.init_data['errorCode']
-#             for code, message in self.error_code_1.items():
-#                 self.error_code[int(code)] = message
-#             # 图鉴代号
-#             for each_ship in self.init_data['shipCard']:
-#                 if 'shipIndex' in each_ship:
-#                     self.handbook_id[each_ship['cid']] = each_ship['shipIndex']
-#             # 装备属性
-#             for equipment in self.init_data['shipEquipmnt']:
-#                 self.ship_equipmnt[equipment["cid"]] = equipment
-
-
-# init_data = InitData()
-
-
-
-# ============================================================
-
 class GameLogin:
     """
     第一次: channal cookie version server_list
@@ -133,7 +77,6 @@ class GameLogin:
         self.defaultServer = 0
         self.uid = None
 
-        # 状态寄存器
 
     # First login to retrieve cookies and server list
     def first_login_usual(self, server, username, pwd):
@@ -149,7 +92,6 @@ class GameLogin:
         response_version = session.get(url=url_version, headers=HEADER, timeout=10)
         response_version = response_version.text
         response_version = json.loads(response_version)
-        # init_data.new_init_version = response_version['DataVersion']
 
         # 获取版本号, 登录地址
         self.version = response_version["version"]["newVersionId"]
@@ -315,14 +257,6 @@ class GameLogin:
         data, times = self.encryption(url=url, method="POST")
         self.pastport_headers["Authorization"] = "HMS {}:".format(self.portHead) + data
         self.pastport_headers["Date"] = times
-
-    def gfffff_get_init_data(self, res_url, end):
-        print("[INFO] Getting init data...")
-        user_data = zlib.decompress(session.get(url=res_url + end, headers=HEADER, timeout=30).content)
-        user_data = json.loads(user_data)
-        user_data["res_url"] = res_url
-        user_data = json.dumps(user_data)
-        return user_data
 
     # ============ xie de shi shen me gou shi???
 
