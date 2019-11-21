@@ -2,13 +2,11 @@
 import datetime
 import time
 import json
-import os
 import random
 import base64
 import hashlib
 import hmac
 import urllib
-import urllib3
 import zlib
 
 import requests
@@ -53,8 +51,8 @@ session = Session()
 
 class GameLogin:
     """
-    第一次: channal cookie version server_list
-    的二次: 什么也不返回,用于初始化游戏数据
+    1st login: channal cookie version server_list
+    2nd login: return nothing; init data
     """
     def __init__(self):
         self.pastport_headers = {
@@ -69,14 +67,12 @@ class GameLogin:
         self.login_server = ""
         self.res = ""
 
-        # 第一次登录返回值
         self.version = "4.7.0"
         self.channel = '100015'
         self.cookies = None
-        self.server_list = []  # 不同服务器的索引
+        self.server_list = []
         self.defaultServer = 0
         self.uid = None
-
 
     # First login to retrieve cookies and server list
     def first_login_usual(self, server, username, pwd):
@@ -138,38 +134,30 @@ class GameLogin:
                      }
         random.seed()
         # 获取欺骗数据
-        login_url_1 = host + 'index/login/' + uid + '?&' + urllib.parse.urlencode(data_dict)
-        session.get(url=login_url_1, headers=HEADER, cookies=self.cookies, timeout=10)
+        login_url_tmp = host + 'index/login/' + uid + '?&' + urllib.parse.urlencode(data_dict)
+        session.get(url=login_url_tmp, headers=HEADER, cookies=self.cookies, timeout=10)
 
         url_cheat = host + 'pevent/getPveData/' + self.get_url_end()
-        pevent_getPveData = json.loads(
-            zlib.decompress(session.get(url=url_cheat, headers=HEADER, cookies=self.cookies, timeout=10).content))
+        session.get(url=url_cheat, headers=HEADER, cookies=self.cookies, timeout=10)
 
         url_cheat = host + 'shop/canBuy/1/' + self.get_url_end()
-        shop_canbuy = json.loads(
-            zlib.decompress(session.get(url=url_cheat, headers=HEADER, cookies=self.cookies, timeout=10).content))
-
+        session.get(url=url_cheat, headers=HEADER, cookies=self.cookies, timeout=10)
+        
         url_cheat = host + 'live/getUserInfo' + self.get_url_end()
-        shop_canbuy = json.loads(zlib.decompress(
-            session.get(url=url_cheat, headers=HEADER, cookies=self.cookies, timeout=10).content))
-
+        session.get(url=url_cheat, headers=HEADER, cookies=self.cookies, timeout=10)
+        
         url_cheat = host + 'live/getMusicList/' + self.get_url_end()
-        shop_canbuy = json.loads(zlib.decompress(
-            session.get(url=url_cheat, headers=HEADER, cookies=self.cookies, timeout=10).content))
-
+        session.get(url=url_cheat, headers=HEADER, cookies=self.cookies, timeout=10)
+        
         url_cheat = host + 'bsea/getData/' + self.get_url_end()
-        bsea_getData = json.loads(
-            zlib.decompress(session.get(url=url_cheat, headers=HEADER, cookies=self.cookies, timeout=10).content))
-
+        session.get(url=url_cheat, headers=HEADER, cookies=self.cookies, timeout=10)
+        
         url_cheat = host + 'active/getUserData' + self.get_url_end()
-        active_getUserData = json.loads(
-            zlib.decompress(session.get(url=url_cheat, headers=HEADER, cookies=self.cookies, timeout=10).content))
+        session.get(url=url_cheat, headers=HEADER, cookies=self.cookies, timeout=10)
 
         url_cheat = host + 'pve/getUserData/' + self.get_url_end()
-        pve_getUserData = json.loads(
-            zlib.decompress(session.get(url=url_cheat, headers=HEADER, cookies=self.cookies, timeout=10).content))
+        session.get(url=url_cheat, headers=HEADER, cookies=self.cookies, timeout=10)
 
-        # self.get_init_data()
         return True
 
     # 普通登录实现方法
@@ -190,7 +178,6 @@ class GameLogin:
                                       headers=self.pastport_headers, timeout=10).text
         login_response = json.loads(login_response)
 
-
         if "error" in login_response and int(login_response["error"]) != 0:
             return False
 
@@ -199,7 +186,6 @@ class GameLogin:
             tokens = login_response["access_token"]
         if "token" in login_response:
             tokens = login_response["token"]
-
 
         url_init = self.hm_login_server + "1.0/get/initConfig/@self"
         self.refresh_headers(url_init)
@@ -240,17 +226,10 @@ class GameLogin:
         url_end = url_end.format(**url_end_dict)
         return url_end
 
-
-
     def encryption(self, url, method):
         times = datetime.datetime.utcnow().strftime('%a, %d %b %Y %H:%M:%S GMT')
 
-        data = ""
-        data += str(method)
-        data += "\n"
-        data += times
-        data += "\n"
-        data += "/" + url.split("/", 3)[-1]
+        data = str(method) + "\n" + times + "\n" + "/" + url.split("/", 3)[-1]
         mac = hmac.new(self.key.encode(), data.encode(), hashlib.sha1)
         data = mac.digest()
         return base64.b64encode(data).decode("utf-8"), times
@@ -260,45 +239,48 @@ class GameLogin:
         self.pastport_headers["Authorization"] = "HMS {}:".format(self.portHead) + data
         self.pastport_headers["Date"] = times
 
-    # ============ xie de shi shen me gou shi???
+    # ================================================================
+    # Game Functions
+    # ================================================================
 
     def get_login_reward(self):
         url = self.server_list[0]["host"] + 'active/getLoginAward/c3ecc6250c89e88d83832e3395efb973/' + self.get_url_end()
-        data=self.Mdecompress(url)
+        data=self.decompress_data(url)
         data = json.loads(data)
         return data
 
     def get_friend_list(self):
         url = self.server_list[0]["host"] + 'friend/getlist' + self.get_url_end()
-        raw_data = self.Mdecompress(url)
+        raw_data = self.decompress_data(url)
         data = json.loads(raw_data)
         return data["list"]
     
     def friend_feat(self, uid, cook_item):
         url = self.server_list[0]["host"] + 'live/feat/' + uid + '/' + cook_item + self.get_url_end()
-        raw_data = self.Mdecompress(url)
+        raw_data = self.decompress_data(url)
         data = json.loads(raw_data)
         return data
 
     def visit_friend_kitchen(self, uid):
         url = self.server_list[0]["host"] + 'live/friendKitchen/' + uid + self.get_url_end()
-        raw_data = self.Mdecompress(url)
+        raw_data = self.decompress_data(url)
         data = json.loads(raw_data)
         return data
 
-    def Mdecompress(self,url,*vdata):
-        if  len(vdata)==0:
+    def decompress_data(self,url,*vdata):
+        if  len(vdata) is 0:
             content = session.get(url=url, headers=HEADER, cookies=self.cookies, timeout=10).content
         else:
-            h=HEADER
+            h = HEADER
             h["Content-Type"]="application/x-www-form-urlencoded"
             content = session.post(url=url,data=str(vdata[0]), headers=h, cookies=self.cookies, timeout=10).content
 
-        try:  # 解码统一
+        try:
             data = zlib.decompress(content)
         except Exception as e:
             data = content
         return data
+
 
 if __name__ == "__main__":
     MY_ACCOUNTS = {}
@@ -319,7 +301,7 @@ if __name__ == "__main__":
             continue
 
         print("[INFO] Getting login reward...")
-        t.get_login_reward()
+        print(t.get_login_reward())
 
         all_friend_list = t.get_friend_list()
         print(all_friend_list)
