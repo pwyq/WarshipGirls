@@ -7,5 +7,6 @@
 
 # `$ sudo crontab -e` to auto schedule
 cd /home/pwyq/github/WarshipGirls/scripts
+date >> nov.log
 python3 kitchen_popularity.py >> nov.log
 python3 kitchen_popularity_new.py >> nov.log
