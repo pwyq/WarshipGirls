@@ -1,40 +1,57 @@
 # 蓝星海狼大队
 
+last update: 191122
+
 ## New version
 
-##### 现有部队
+##### 现有潜艇部队
 
-| 名 | 总数 | 改造 | 未改 |
+| Name | Total | Mod | Un-mod |
 |:---:|:---:|:---:|:---:|
-| 大青花鱼 | 14 | 6 | 8 |
-| 射水鱼 | 7 | 5 | 2 |
-| 刺尾鱼 | 9 | 0 | 9 |
+| Albacore(大青花鱼) | 17 | 6 | 11 |
+| Archerfish(射水鱼) | 8 | 5 | 3 |
+| Tang(刺尾鱼) | 12 | 0 | 12 |
 | U47 | 5 | 5 | 0 |
 | U81 | 1 | 1 | 0 |
 | U505 | 5 | 0 | 5 |
 | U96 | 1 | 0 | 1 |
 | U1206 | 1 | 0 | 1 |
-| 絮库夫 | 1 | 0 | 1 |
-| M1 | 2 | 0 | 2 |
+| U1405 | 1 | 0 | 1 |
+| da Vinci(达芬奇) | 1 | 0 | 1 |
+| K1 | 1 | 0 | 1 |
+
+| Position | Type | Total |
+|:--------:|:----:|:-----:|
+| 1 | `U47` (5), `U505` (3) | 8 |
+| 2 | `Albacore` (17) | 17 |
+| 3 | `Tang` (12) | 12 |
+| 4 | `Archerfish` (8) | 8 |
+| 5 | `U1206` (1), `U1405` (1), `da Vinci` (1), `U505` (1) | 3 |
+| 6 | `K1` (1), `U96` (1), `U81` (1), `U505` (1) | 3 |
 
 一艘满级`SS`的大破修理时间约为50分钟，一次出击（换装备+整理+进图）约为3分钟。
 最坏的，假设每次出击都全员大破，则每个位置（1-6号位）需要至少15号机。
 另考虑到维修顺序不可能随时都是最优解，每个位置需要至少20号机来维持潜艇部队的无缝出击。
 
+##### 现有炮潜部队
+
+| 名 | 总数 | 改造 | 未改 |
+|:---:|:---:|:---:|:---:|
+| 絮库夫 | 1 | 0 | 1 |
+| M1 | 2 | 0 | 2 |
+| M2 | 1 | 0 | 1 |
+
+
 ##### 还未获得
 
-M2
-, U156
-, U1405
+U156
 , U35
 , 吕-34
-, K1
 , 鹦鹉螺
-, 达芬奇
 , 莉安夕
 , 鲅鱼
 
-## Old version
+## Old version (Deprecated)
 
 This list was designed at WGR version `3.1.0`, and can be used until new `SS` is released or existed `SS`/`SC` is modified.
 `SS` and `SC` require very little resources and need relatively shorter repairing time in WGR; therefore, this list was created to maximize the potential of SS/SC fleet.
