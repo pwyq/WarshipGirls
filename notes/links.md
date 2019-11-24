@@ -19,10 +19,12 @@
     - 其他两个贴吧都是萌新
 * [A岛舰娘版][10]
     - CR共荣，萌新dalao 50-50
-* [北朝战舰少女][12]
-    - 活人较少
-* [WGR reddit][13]
-    - 老外怎么可能玩这种otaku游戏嘛
+* [Taptap forum][14]
+    - 这个姑且也算进来吧
+* 一些基本没活人的论坛
+    - [北朝][12], [九游][15], [reddit][13]
+
+[15]: http://bbs.9game.cn/forum-3319-1.html
 
 ---
 
@@ -76,3 +78,4 @@
 [11]: https://warship-girls.fandom.com/wiki/Warship_Girls_Wiki
 [12]: https://bbs.northdy.com/forum-103-1.html
 [13]: https://www.reddit.com/r/WarshipGirls/
+[14]: https://www.taptap.com/app/3378/topic
