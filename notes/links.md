@@ -1,17 +1,28 @@
 ### 常用资料站
 
 * [舰船出货查询][1]
-* [战舰少女-母港][2] (无人维护)
 * [战舰少女资料库][3]
 * [战舰少女百科][4]
 * [舰R魔盒-出货统计][9]
+* [WGR wiki][11]
 * [舰R萌娘百科][5] (已停更)
+* [战舰少女-母港][2] (无人维护/域名过期)
 
 ### 游戏社区
 
 * [NGA舰R版][6]
+    - 攻略最全最多
 * [S1舰R专楼][7]
+    - 应该是戈本dalao最多的论坛
 * [战舰少女台服贴吧][8]
+    - 什么都聊，就是不聊R
+    - 其他两个贴吧都是萌新
+* [A岛舰娘版][10]
+    - CR共荣，萌新较多
+* [北朝战舰少女][12]
+    - 活人较少
+* [WGR reddit][13]
+    - 老外怎么可能玩这种otaku游戏嘛
 
 ---
 
@@ -60,3 +71,7 @@
 [7]: http://bbs.saraba1st.com/2b/thread-1065797-1-1.html
 [8]: https://wapp.baidu.com/mo/q/f?kw=%E6%88%98%E8%88%B0%E5%B0%91%E5%A5%B3%E5%8F%B0%E6%9C%8D&ie=utf-8
 [9]: http://www.jianrmod.cn
+[10]: https://adnmb2.com/f/%E8%88%B0%E5%A8%98
+[11]: https://warship-girls.fandom.com/wiki/Warship_Girls_Wiki
+[12]: https://bbs.northdy.com/forum-103-1.html
+[13]: https://www.reddit.com/r/WarshipGirls/
