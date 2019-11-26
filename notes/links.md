@@ -1,6 +1,5 @@
 ### 常用资料站
 
-* [舰船出货查询][1]
 * [战舰少女资料库][3]
 * [战舰少女百科][4]
 * [舰R魔盒-出货统计][9]
@@ -65,7 +64,6 @@
 - Marine national francaise: Surcouf 1/2
 
 
-[1]: http://www.jianrmod.cn/index.html
 [2]: https://hp.twintails.xyz/
 [3]: http://js.ntwikis.com/
 [4]: https://www.zjsnrwiki.com/wiki/%E9%A6%96%E9%A1%B5
