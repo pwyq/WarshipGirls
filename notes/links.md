@@ -4,6 +4,7 @@
 * [战舰少女百科][4]
 * [舰R魔盒-出货统计][9]
 * [WGR wiki][11]
+* [出征脚本/建造阈值出货查询][16]
 * [舰R萌娘百科][5] (已停更)
 * [战舰少女-母港][2] (无人维护/域名过期)
 
@@ -23,7 +24,7 @@
 * 一些基本没活人的论坛
     - [北朝][12], [九游][15], [reddit][13]
 
-[15]: http://bbs.9game.cn/forum-3319-1.html
+
 
 ### 舰R难度
 
@@ -88,3 +89,5 @@
 [12]: https://bbs.northdy.com/forum-103-1.html
 [13]: https://www.reddit.com/r/WarshipGirls/
 [14]: https://www.taptap.com/app/3378/topic
+[15]: http://bbs.9game.cn/forum-3319-1.html
+[16]: http://zjsnr.github.io/
