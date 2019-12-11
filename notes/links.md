@@ -1,3 +1,8 @@
+ File              : links.md
+ Author            : Yanqing Wu <meet.yanqing.wu@gmail.com>
+ Date              : 10.12.2019
+ Last Modified Date: 10.12.2019
+ Last Modified By  : Yanqing Wu <meet.yanqing.wu@gmail.com>
 ### 常用资料站
 
 * [战舰少女资料库][3]
@@ -11,14 +16,15 @@
 ### 游戏社区
 
 * [NGA舰R版][6]
-    - 攻略最全最多
+    - 只适合看精品贴
 * [S1舰R专楼][7]
-    - 应该是戈本dalao最多的论坛
+    - 也许是戈本dalao比例最多的论坛?
 * [战舰少女台服贴吧][8]
     - 什么都聊，就是不聊R
+    - dalao很多
     - 其他两个贴吧都是萌新
 * [A岛舰娘版][10]
-    - CR共荣，萌新dalao 50-50
+    - CR共荣！
 * [Taptap forum][14]
     - 这个姑且也算进来吧
 * 一些基本没活人的论坛
