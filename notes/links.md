@@ -1,8 +1,3 @@
- File              : links.md
- Author            : Yanqing Wu <meet.yanqing.wu@gmail.com>
- Date              : 10.12.2019
- Last Modified Date: 10.12.2019
- Last Modified By  : Yanqing Wu <meet.yanqing.wu@gmail.com>
 ### 常用资料站
 
 * [战舰少女资料库][3]
