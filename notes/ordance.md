@@ -1,8 +1,19 @@
-# Extreme Logistics
+
+_Resource logistics is one of the most crucial and indispensible factors in the game, which fascinates me the most._
+
+__Content__
+
+- [Extreme Collection of Oil](#extreme-collection-of-oil)
+- [Strategic Reserve](#strategic-reserve)
+- [Mass Production of Ordance](#mass-production-of-ordance)
+
+---
+
+# Extreme Collection of Oil
 
 I only calculate for the oil resource as it is THE most important natural resource in the game.
 
-- Because of the existence of weeekly tasks, we take one week as a calculation cycle for simplicity
+- Because of the existence of weekly tasks, we take one week as a calculation cycle for simplicity
 - Assume big success rate of expedition is 65% and 4 Tenryus as the flagship of expedition
 - Assume no other equipment to boost the outcome
 - Assume resources are below the auto restore limit
@@ -81,11 +92,30 @@ E[X] = 200 * 1/8 + 150 * 1/8 + 100 * 1/8 + 200 * 1/8 + 150 * 1/8 + 0 * 1/8 + 300
 108069
 ```
 
-If we optimize quotidian consumptions, we are able to get an exciting amount of **100k** oil per week!
+If we optimize quotidian consumptions, we are able to get an exciting amount of over **100k** oil per week!
 
 ---
 
-# 量产型最佳装备
+# Strategic Reserve
+
+- Following resources are per unit
+- Last update: 191214
+
+| Name | Total Units | Oil | Ammo | Steel | Aluminium | Others |
+|:----:|:------:|:---:|:----:|:-----:|:---------:|:------:|
+| 金块箱 | 39 | 450 | 450 | 450 | 120 | |
+| 极密货物 | 9 | 235 | | | | |
+| 月卡 | 59 | 500 | 500 | 500 | 500 | 舰船蓝图(1) |
+| 191213 | 1 | 1000 | 1000 | 1000 | 1000 | 快建(1), 舰船蓝图(1) |
+| 180330 | 1 | 1500 | 1500 | 1500 | 1500 | 快建(1), 舰船蓝图(1) |
+| 170922 | 1 | 1000 | 1000 | 1000 | 1000 | |
+| 170802 | 1 | 810 | 810 | 810 | 810 | 损管(1) |
+| 170516 | 1 | 40000 | 30000 | 30000 | 30000 | 快修(100) |
+
+
+---
+
+# Mass Production of Ordance
 
 (UNDER CONSTRUCTION)
 
