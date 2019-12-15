@@ -5,6 +5,7 @@ __Content__
 
 - [Extreme Collection of Oil](#extreme-collection-of-oil)
 - [Strategic Reserve](#strategic-reserve)
+- [General Game Plan](#general-game-plan)
 - [Mass Production of Ordance](#mass-production-of-ordance)
 
 ---
@@ -112,6 +113,19 @@ If we optimize quotidian consumptions, we are able to get an exciting amount of 
 | 170802 | 1 | 810 | 810 | 810 | 810 | 损管(1) |
 | 170516 | 1 | 40000 | 30000 | 30000 | 30000 | 快修(100) |
 
+# General Game Plan
+
+- 有活动期间
+    - 战利品活动 -> 适度打捞
+    - 圣肝 -> 练中大型船（CA, BB, BC, CA, AV）
+    - 有出门夜战点 -> 练技能
+- 无活动期间
+    - 练中小型船（SS, DD, CL, CA, CVL）
+- 先建造毕业，后打捞毕业
+- 先赌大船，后赌小船
+- 维持资源
+    - 资源极度不平衡 -> 大建 / 练大船
+    - 维持油弹铝在低保线下5k左右，有活动消息则全力跑油+偷铝+偷弹
 
 ---
 
