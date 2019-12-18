@@ -3,10 +3,31 @@ _Resource logistics is one of the most crucial and indispensible factors in the 
 
 __Content__
 
+- [General Game Plan](#general-game-plan)
 - [Extreme Collection of Oil](#extreme-collection-of-oil)
 - [Strategic Reserve](#strategic-reserve)
-- [General Game Plan](#general-game-plan)
 - [Mass Production of Ordance](#mass-production-of-ordance)
+- [Dismentlable Ordance](#dismentlable-ordance)
+
+---
+
+# General Game Plan
+
+本提督结合自身经验总结出以下30字后勤口诀：
+
+> “全力跑油，日常炸鱼，油满偷弹，弹满偷铝。如此往复，无往不利。”
+
+- 有活动期间
+    - 战利品活动 -> 适度打捞
+    - 圣肝 -> 练中大型船（CA, BB, BC, CA, AV）
+    - 有出门夜战点 -> 练技能
+- 无活动期间
+    - 练中小型船（SS, DD, CL, CA, CVL）
+- 先建造毕业，后打捞毕业
+- 先赌大船，后赌小船
+- 维持资源
+    - 资源极度不平衡 -> 大建 / 练大船
+    - 维持油弹铝在低保线下5k左右，有活动消息则全力跑油+偷铝+偷弹
 
 ---
 
@@ -113,20 +134,6 @@ If we optimize quotidian consumptions, we are able to get an exciting amount of 
 | 170802 | 1 | 810 | 810 | 810 | 810 | 损管(1) |
 | 170516 | 1 | 40000 | 30000 | 30000 | 30000 | 快修(100) |
 
-# General Game Plan
-
-- 有活动期间
-    - 战利品活动 -> 适度打捞
-    - 圣肝 -> 练中大型船（CA, BB, BC, CA, AV）
-    - 有出门夜战点 -> 练技能
-- 无活动期间
-    - 练中小型船（SS, DD, CL, CA, CVL）
-- 先建造毕业，后打捞毕业
-- 先赌大船，后赌小船
-- 维持资源
-    - 资源极度不平衡 -> 大建 / 练大船
-    - 维持油弹铝在低保线下5k左右，有活动消息则全力跑油+偷铝+偷弹
-
 ---
 
 # Mass Production of Ordance
@@ -160,3 +167,10 @@ If we optimize quotidian consumptions, we are able to get an exciting amount of 
 - USN: Tang 6/6; Archerfish 7/12; Albacore 13/12
 - RN: M1 2/4
 - Marine national francaise: Surcouf 1/2
+
+# Dismentlable Ordance
+
+| Name | Info | Keep Amount | Comments |
+|:----:|:----:|:-----------:|:--------:|
+| 海喷火 | 对空+7 回避+2 铝耗5 | 0 | 上位替代'海喷火MKXV'大量存在 |
+| 改良型深弹投射器 | 对潜+8 | 3 | 用于控制炸鱼MVP；上位替代'刺猬弹深弹投射器'大量存在 |
