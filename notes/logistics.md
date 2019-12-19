@@ -78,14 +78,14 @@ Since S is strictly bigger than 0, we shall undoubtably choose Tenryu as the fla
 I only calculate for the oil resource as it is THE most important natural resource in the game.
 
 - Because of the existence of weekly tasks, we take one week as a calculation cycle for simplicity
-- Assume big success rate of expedition is 65% and 4 Tenryu as the flagship of expedition
+- Assume big success rate of expedition is 75% and 4 Tenryu as the flagship of expedition
 - Assume no other equipment to boost the outcome
 - Assume resources are below the auto restore limit
 - 168 hours / week
 - we define following formula:
 
 ```
-BS = 0.65   # big success rate
+BS = 0.75   # big success rate
 BG = 1.50   # big success gain
 TL = 1.08   # Tenryu effect
 NG = 1.00   # normal gain
@@ -95,7 +95,7 @@ def single_map(runs, amount):
     y = runs - x
     # big_success_res = x * amount * BG * TL
     # normal_res      = y * amount * NG * TL
-    return (x*BG + y*NG) * amount * TL 
+    return (x*BG + y*NG) * amount * TL
 ```
 
 ## OIL
@@ -131,7 +131,7 @@ E[X] = 200 * 1/8 + 150 * 1/8 + 100 * 1/8 + 200 * 1/8 + 150 * 1/8 + 0 * 1/8 + 300
 ```
 # Expedition
 >>> single_map(18,800) + single_map(84,150) + single_map(42,350) + single_map(336,30) + single_map(6,60)
-74169.0
+77101.2
 
 # Campaign
 >>> 200 * 8 * 7
@@ -152,11 +152,11 @@ E[X] = 200 * 1/8 + 150 * 1/8 + 100 * 1/8 + 200 * 1/8 + 150 * 1/8 + 0 * 1/8 + 300
 5200
 
 # Total
->>> 74169 + 11200 + 10080 + 7420 + 5200
-108069
+>>> 77101 + 11200 + 10080 + 7420 + 5200
+111001
 ```
 
-If we optimize quotidian consumptions, we are able to get an exciting amount of over **100k** oil per week!
+If we optimize quotidian consumptions, we are able to get an exciting amount of over **110k** oil per week!
 
 ---
 
