@@ -3,6 +3,7 @@ _Resource logistics is one of the most crucial and indispensible factors in the 
 __Content__
 
 - [General Game Plan](#general-game-plan)
+- [Tatsuta or Tenryu](#tatsuta-or-tenryu)
 - [Extreme Collection of Oil](#extreme-collection-of-oil)
 - [Strategic Reserve](#strategic-reserve)
 
@@ -43,12 +44,41 @@ __Content__
 
 ---
 
+# Tatsuta or Tenryu
+
+- Tatsuta effect = increase big success rate of expedition by 8%
+- Tenryu effect = increase resource gain of expedition by 8%
+
+```
+Let assume our big success rate is S (S > 0), and we know that big success gain is 50% more. 
+Then we have
+
+Without Tatsuta or Tenryu,
+
+E[Original] = (1 - S) * 1 + S * 1.5
+            = 1 + 0.5S
+
+For Tatsuta, S' = S * (1 + 8%) = 1.08S,
+E[Ta] = (1 - S') * 1 + S' * 1.5
+      = 1 - 1.08S + 1.62S
+      = 1 + 0.54S
+
+For Tenryu,
+E[Te] = (1 - S) * 1 * 1.08 + S * 1.5 * 1.08
+      = 1.08 - 1.08S + 1.62S
+      = 1.08 + 0.54S
+
+Therefore, E[Te] > E[Ta].
+```
+
+Since S is strictly bigger than 0, we shall undoubtably choose Tenryu as the flagship for all expedition tasks.
+
 # Extreme Collection of Oil
 
 I only calculate for the oil resource as it is THE most important natural resource in the game.
 
 - Because of the existence of weekly tasks, we take one week as a calculation cycle for simplicity
-- Assume big success rate of expedition is 65% and 4 Tenryus as the flagship of expedition
+- Assume big success rate of expedition is 65% and 4 Tenryu as the flagship of expedition
 - Assume no other equipment to boost the outcome
 - Assume resources are below the auto restore limit
 - 168 hours / week
@@ -57,7 +87,7 @@ I only calculate for the oil resource as it is THE most important natural resour
 ```
 BS = 0.65   # big success rate
 BG = 1.50   # big success gain
-TL = 1.08   # Tenryus effect
+TL = 1.08   # Tenryu effect
 NG = 1.00   # normal gain
 
 def single_map(runs, amount):
