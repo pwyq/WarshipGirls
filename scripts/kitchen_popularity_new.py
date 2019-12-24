@@ -283,6 +283,9 @@ if __name__ == "__main__":
     with open('acc2.json', 'r') as f:
         MY_ACCOUNTS = json.load(f)
 
+    # Quotidian limit is 3 orders per user
+    # Quotidian increase limit for target user is 100 points
+
     account_num = 0
     while account_num < len(MY_ACCOUNTS):
         t = GameLogin()

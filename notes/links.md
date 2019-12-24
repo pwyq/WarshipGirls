@@ -12,7 +12,7 @@
 ### 游戏社区
 
 * [NGA舰R版][6]
-    - 只适合看精品贴
+    - 只适合看[精品贴][17]
 * [S1舰R专楼][7]
 * [战舰少女台服贴吧][8]
 * [A岛舰娘版][10]
@@ -39,6 +39,10 @@
 除了已知的德皇，意舰联（这位只是用意大利船打活动），十里坡剑神。还有1级提督等级（只B胜）过活动的dalao。
 
 ~其实以上都不算“难”，难的是如何平衡现实学习/工作/生活和游戏。~
+
+### 舰R冷知识
+
+- 每年1月1日会刷新周常
 
 ### 舰R目标
 
@@ -123,7 +127,7 @@
 [5]: https://zh.moegirl.org/%E6%88%98%E8%88%B0%E5%B0%91%E5%A5%B3
 [6]: http://bbs.ngacn.cc/thread.php?fid=-149110
 [7]: http://bbs.saraba1st.com/2b/thread-1065797-1-1.html
-[8]: https://wapp.baidu.com/mo/q/f?kw=%E6%88%98%E8%88%B0%E5%B0%91%E5%A5%B3%E5%8F%B0%E6%9C%8D&ie=utf-8
+[8]: http://c.tieba.baidu.com/f?kw=%E6%88%98%E8%88%B0%E5%B0%91%E5%A5%B3%E5%8F%B0%E6%9C%8D&ie=utf-8&tp=0
 [9]: http://www.jianrmod.cn
 [10]: https://adnmb2.com/f/%E8%88%B0%E5%A8%98
 [11]: https://warship-girls.fandom.com/wiki/Warship_Girls_Wiki
@@ -132,3 +136,4 @@
 [14]: https://www.taptap.com/app/3378/topic
 [15]: http://bbs.9game.cn/forum-3319-1.html
 [16]: http://zjsnr.github.io/
+[17]: https://bbs.nga.cn/thread.php?&recommend=1&fid=-149110&order_by=postdatedesc&admin=1
