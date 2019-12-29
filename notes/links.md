@@ -5,6 +5,7 @@
 * [舰R魔盒-出货统计][9]
 * [WGR wiki][11]
 * [出征脚本/建造阈值出货查询][16]
+* [Warship Girls DB][18]
 * [舰R萌娘百科][5] (已停更)
 * [战舰少女-母港][2] (无人维护/域名过期)
 
@@ -137,3 +138,4 @@
 [15]: http://bbs.9game.cn/forum-3319-1.html
 [16]: http://zjsnr.github.io/
 [17]: https://bbs.nga.cn/thread.php?&recommend=1&fid=-149110&order_by=postdatedesc&admin=1
+[18]: https://shipgirlfriends.moe
