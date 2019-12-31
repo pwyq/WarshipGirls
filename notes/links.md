@@ -6,6 +6,7 @@
 * [WGR wiki][11]
 * [出征脚本/建造阈值出货查询][16]
 * [Warship Girls DB][18]
+* [WW2 Battleships and Cruisers]
 * [舰R萌娘百科][5] (已停更)
 * [战舰少女-母港][2] (无人维护/域名过期)
 
@@ -43,7 +44,8 @@
 
 ### 舰R冷知识
 
-- 每年1月1日会刷新周常
+- 每年1月1日零点会刷新周常；每日凌晨3点刷新日常；每周一凌晨4点刷新周常。
+- 低保线上限是100k（4.7版本数据）
 
 ### 舰R目标
 
@@ -139,3 +141,4 @@
 [16]: http://zjsnr.github.io/
 [17]: https://bbs.nga.cn/thread.php?&recommend=1&fid=-149110&order_by=postdatedesc&admin=1
 [18]: https://shipgirlfriends.moe
+[19]: https://www.world-war.co.uk/index.php3
