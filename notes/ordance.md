@@ -3,6 +3,7 @@ __Content__
 
 - [Mass Production of Ordance](#mass-production-of-ordance)
 - [Dismentlable Ordance](#dismentlable-ordance)
+- [Munition Tycoon](#munition-tycoon)
 
 ---
 
@@ -219,7 +220,7 @@ __Content__
 
 ---
 
-# 贩卖军火
+# Munition Tycoon
 
 2020.1.1
 

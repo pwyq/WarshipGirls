@@ -6,7 +6,7 @@
 * [WGR wiki][11]
 * [出征脚本/建造阈值出货查询][16]
 * [Warship Girls DB][18]
-* [WW2 Battleships and Cruisers]
+* [WW2 Battleships and Cruisers][19]
 * [舰R萌娘百科][5] (已停更)
 * [战舰少女-母港][2] (无人维护/域名过期)
 
