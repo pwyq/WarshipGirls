@@ -19,6 +19,7 @@
 * [战舰少女台服贴吧][8]
 * [A岛舰娘版][10]
     - CR共荣！
+* [Discord][20]
 * [Taptap forum][14]
     - 这个姑且也算进来吧
 * 一些基本没活人的论坛
@@ -118,7 +119,7 @@
 2019.11 
 2018.09 试玩苍青幻影
 2019.11 回坑R，做了这个小站
-        "Midway (决战中途岛)"，回坑因素之一
+        电影"Midway (决战中途岛)"，回坑因素之一
 2019.12 R 女武神复刻活动 困难通关 + 打捞毕业 + 首日章 + 全功勋
         R 第二次船位危机 max=400
           因无法充值，大量拆除满级CVL，养殖用BB/SC，大量稀有船
@@ -142,3 +143,4 @@
 [17]: https://bbs.nga.cn/thread.php?&recommend=1&fid=-149110&order_by=postdatedesc&admin=1
 [18]: https://shipgirlfriends.moe
 [19]: https://www.world-war.co.uk/index.php3
+[20]: https://discordapp.com/channels/167173059286007809/167173059286007809
