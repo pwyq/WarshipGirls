@@ -34,8 +34,8 @@ android_server          = base_url + "warshipgirlsr_cn_censor_v{}.apk"; where {}
 iOS_user_android_server = base_url + "warshipgirlsr_ios_cn_censor_v{}.apk"
 
 # Base package (around 40M)
-android_server          = "warshipgirlsr_cn_censor_base_v{}.apk?"
-iOS_user_android_server = "warshipgirlsr_ios_cn_censor_base_v{}.apk?"
+android_server          = base_url + "warshipgirlsr_cn_censor_base_v{}.apk?"
+iOS_user_android_server = base_url + "warshipgirlsr_ios_cn_censor_base_v{}.apk?"
 ```
 
 ### 舰R难度
