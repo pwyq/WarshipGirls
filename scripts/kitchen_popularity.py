@@ -9,7 +9,7 @@ import zlib
 
 class Utility(Exception):
     def __init__(self, username, password):
-        self.version = "4.7.0"
+        self.version = "4.8.0"
         self.channel = "100014" # iOS server
 
         self.versionlink = "http://version.jr.moefantasy.com/" \

@@ -25,6 +25,18 @@
 * 一些基本没活人的论坛
     - [北朝][12], [九游][15], [reddit][13]
 
+### 下载地址
+
+```
+base_url = "http://bspackage.moefantasy.com/jn/"
+# Full package (around 1.5G)
+android_server          = base_url + "warshipgirlsr_cn_censor_v{}.apk"; where {} = version, e.g 4.8.0
+iOS_user_android_server = base_url + "warshipgirlsr_ios_cn_censor_v{}.apk"
+
+# Base package (around 40M)
+android_server          = "warshipgirlsr_cn_censor_base_v{}.apk?"
+iOS_user_android_server = "warshipgirlsr_ios_cn_censor_base_v{}.apk?"
+```
 
 ### 舰R难度
 
@@ -46,6 +58,7 @@
 ### 舰R冷知识
 
 - 每年1月1日零点会刷新周常；每日凌晨3点刷新日常；每周一凌晨4点刷新周常。
+- 小版本更新不会重置任务（如4.7.0->4.8.0）；大版本未知
 - 低保线上限是100k（4.7版本数据）
 
 ### 舰R目标
@@ -62,6 +75,7 @@
     - [ ] AG
     - [ ] DDG
     - [ ] 航巡
+- [ ] 满军阶
 - [ ] 全船舱船只满强化
 - [ ] 全船舱船只满级
 - [ ] 潜艇部队能够无缝出击

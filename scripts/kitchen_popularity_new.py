@@ -67,7 +67,7 @@ class GameLogin:
         self.login_server = ""
         self.res = ""
 
-        self.version = "4.7.0"
+        self.version = "4.8.0"
         self.channel = '100015'
         self.cookies = None
         self.server_list = []
@@ -77,7 +77,7 @@ class GameLogin:
     def first_login_usual(self, server, username, pwd):
         # iOS
         url_version = 'http://version.jr.moefantasy.com/' \
-                      'index/checkVer/4.7.0/100015/2&version=4.7.0&channel=100015&market=2'
+                      'index/checkVer/4.8.0/100015/2&version=4.8.0&channel=100015&market=2'
         self.res = 'http://loginios.jr.moefantasy.com/index/getInitConfigs/'
         self.channel = "100015"
         self.portHead = "881d3SlFucX5R5hE"
