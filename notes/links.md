@@ -76,6 +76,11 @@ iOS_user_android_server = base_url + "warshipgirlsr_ios_cn_censor_base_v{}.apk?"
     - [ ] DDG
     - [ ] 航巡
 - [ ] 满军阶
+- [ ] 冲榜
+    - [ ] 功勋榜第一
+    - [ ] 收集榜第一
+    - [ ] 功勋收集榜并列第一
+    - [ ] 蝉联第一
 - [ ] 全船舱船只满强化
 - [ ] 全船舱船只满级
 - [ ] 潜艇部队能够无缝出击
