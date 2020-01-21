@@ -142,6 +142,7 @@ iOS_user_android_server = base_url + "warshipgirlsr_ios_cn_censor_base_v{}.apk?"
 2019.12 R 女武神复刻活动 困难通关 + 打捞毕业 + 首日章 + 全功勋
         R 第二次船位危机 max=400
           因无法充值，大量拆除满级CVL，养殖用BB/SC，大量稀有船
+2020.01 R 极地奏鸣曲 困难通关 + 全功勋
 ```
 
 [2]: https://hp.twintails.xyz/
