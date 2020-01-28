@@ -65,7 +65,7 @@ iOS_user_android_server = base_url + "warshipgirlsr_ios_cn_censor_base_v{}.apk?"
 
 - [ ] 凑满一队/四队/八队毕业装
     - [ ] BB BC BM
-    - [ ] SS
+    - [x] SS (1: 200126)
     - [ ] SC
     - [ ] DD
     - [ ] CL
